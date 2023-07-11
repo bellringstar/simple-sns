@@ -52,3 +52,18 @@
 JWT Authorization 이용
 
 ![img.png](img.png)
+
+## 사용 기술 스택
+- Java 11
+- Spring Boot 2.6.7
+- Spring JPA
+- Spring Security
+- Gradle
+- Lombok
+- Github
+- Junit5
+- Kafka
+- Postgresql
+- Redis
+- Heroku
+- SSE
