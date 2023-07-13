@@ -16,7 +16,9 @@ public class UserService {
     private final UserEntityRepository userEntityRepository;
 
     public User join(String username, String password) {
-        Optional<UserEntity> userEntity = userEntityRepository.findByUsername(username);
+        userEntityRepository.findByUsername(username).ifPresent(it -> {
+            throw new SnsApplicationException();
+        });
 
         userEntityRepository.save(new UserEntity());
         return new User();
